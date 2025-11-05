@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class ejercicio11 {
         System.out.println("¿Cuantos numeros que desea multiplicar? ");
         int valor;
         valor = scanner.nextInt();
-        int resultado= 0;
+        int resultado = 0;
 
         switch (valor) {
             case 2:
@@ -21,17 +21,17 @@ public class ejercicio11 {
                 a = scanner.nextInt();
                 System.out.println("ingese el segundo numero");
                 b = scanner.nextInt();
-                resultado= multiplicacion(a,b);
+                resultado = multiplicacion(a, b);
                 break;
             case 3:
-                    int c;
-                    System.out.println("ingese el primer numero");
+                int c;
+                System.out.println("ingese el primer numero");
                 a = scanner.nextInt();
                 System.out.println("ingese el segundo numero");
                 b = scanner.nextInt();
                 System.out.println("ingrese el tercer numero");
                 c = scanner.nextInt();
-                resultado=multiplicacion(a,b,c);
+                resultado = multiplicacion(a, b, c);
                 break;
 
             default:
@@ -41,9 +41,11 @@ public class ejercicio11 {
         scanner.close();
 
     }
+
     public static int multiplicacion(int a, int b) {
         return a * b;
     }
+
     public static int multiplicacion(int a, int b, int c) {
         return a * b * c;
     }

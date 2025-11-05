@@ -1,4 +1,4 @@
-package Unidad3.ejercicio2;
+package Unidad2.ejercicio4;
 
 import java.util.Scanner;
 
@@ -6,19 +6,20 @@ import java.util.Scanner;
 public class ejercicio2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n =scanner.nextInt();
+        int n = scanner.nextInt();
         for (int i = 0; i <= n; i++) {
-            System.out.println(fibonacci(i) +"");
-        scanner.close();
+            System.out.println(fibonacci(i) + "");
+            scanner.close();
         }
     }
-    public static int fibonacci(int n){
-        if (n==0) {
+
+    public static int fibonacci(int n) {
+        if (n == 0) {
             return 0;
-        } else if (n==1) {
+        } else if (n == 1) {
             return 1;
-        }else  {
-            return fibonacci(n-1)+fibonacci(n-2);
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
         }
 
     }

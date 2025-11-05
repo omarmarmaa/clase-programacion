@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 import java.util.Scanner;
 
@@ -7,15 +7,16 @@ public class ejercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el valor del numero: ");
-        int numero=scanner.nextInt();
+        int numero = scanner.nextInt();
 
         determinante(numero);
         scanner.close();
     }
-    public static void determinante(int a){
-        if (a%2==0){
+
+    public static void determinante(int a) {
+        if (a % 2 == 0) {
             System.out.println("es par");
-        }else {
+        } else {
             System.out.println("es impar");
         }
     }

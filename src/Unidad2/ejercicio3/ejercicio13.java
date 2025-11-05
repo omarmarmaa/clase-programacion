@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 import java.util.Scanner;
 
@@ -12,12 +12,14 @@ public class ejercicio13 {
         String apellido = scanner.nextLine();
 
         nombre(nombre);
-        apellido(nombre ,apellido);
+        apellido(nombre, apellido);
     }
+
     public static void nombre(String nombre) {
-        System.out.println("holaaa " +nombre);
+        System.out.println("holaaa " + nombre);
     }
-    public static void apellido(String nombre,String apellido) {
+
+    public static void apellido(String nombre, String apellido) {
         System.out.println("holaaaaaaa " + nombre + " " + apellido);
     }
 }

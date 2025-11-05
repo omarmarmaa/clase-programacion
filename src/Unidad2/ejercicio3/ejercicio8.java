@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class ejercicio8 {
         scanner.close();
     }
 
-     static int valorabsoluto(int numero) {
+    static int valorabsoluto(int numero) {
 
         if (numero >= 0) {
             return numero;

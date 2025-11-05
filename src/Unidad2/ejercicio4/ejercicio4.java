@@ -1,4 +1,4 @@
-package Unidad3.ejercicio2;
+package Unidad2.ejercicio4;
 
 import java.util.Scanner;
 
@@ -18,6 +18,7 @@ public class ejercicio4 {
         System.out.println("el numero no redondeado es " + numero);
         System.out.println("numero redondeado es " + redondeo(numero, valor));
     }
+
     public static float redondeo(float numero, int valor) {
         if (valor == 0) {
             return Math.round(numero);

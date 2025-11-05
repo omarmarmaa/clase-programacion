@@ -1,4 +1,4 @@
-package Unidad3.ejercicio2;
+package Unidad2.ejercicio4;
 
 import java.util.Scanner;
 
@@ -9,23 +9,24 @@ public class ejercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("verificaremos si es una vocal o no");
-        char letra=scanner.next().charAt(0);
+        char letra = scanner.next().charAt(0);
 
         System.out.println(esvocal(letra));
         scanner.close();
     }
-    public static boolean esvocal(char letra){
-        if (letra == 'a'){
+
+    public static boolean esvocal(char letra) {
+        if (letra == 'a') {
             return true;
-        } else if (letra =='e') {
+        } else if (letra == 'e') {
             return true;
-        }else if (letra =='i') {
+        } else if (letra == 'i') {
             return true;
-        }else if (letra =='o') {
+        } else if (letra == 'o') {
             return true;
-        }else if (letra =='u') {
+        } else if (letra == 'u') {
             return true;
         }
-        return  false;
+        return false;
     }
 }

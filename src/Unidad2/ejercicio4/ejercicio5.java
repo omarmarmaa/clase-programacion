@@ -1,4 +1,4 @@
-package Unidad3.ejercicio2;
+package Unidad2.ejercicio4;
 
 import java.util.Scanner;
 
@@ -8,16 +8,17 @@ import java.util.Scanner;
 public class ejercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numero=scanner.nextInt();
+        int numero = scanner.nextInt();
 
         System.out.println(factorial(numero));
         scanner.close();
     }
-    public static int factorial(int numero){
-        if (numero==1){
+
+    public static int factorial(int numero) {
+        if (numero == 1) {
             return 1;
-        }else  {
-           return numero*factorial(numero-1);
+        } else {
+            return numero * factorial(numero - 1);
         }
     }
 

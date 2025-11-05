@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 //Crea un método llamado saludar que imprima un saludo en pantalla.
 // Llama a ese método desde main.
@@ -7,7 +7,8 @@ public class ejercicio1 {
 
         saludar();
     }
-    static void saludar(){
+
+    static void saludar() {
         System.out.println("saludo");
     }
 }

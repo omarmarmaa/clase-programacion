@@ -1,4 +1,4 @@
-package Unidad3.ejercicio1;
+package Unidad2.ejercicio3;
 
 import java.util.Scanner;
 
@@ -9,12 +9,13 @@ public class ejercicio7 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese el valor en celcius por favor:");
-        int celcius=scanner.nextInt();
+        int celcius = scanner.nextInt();
 
         System.out.println(farenheit(celcius));
         scanner.close();
     }
-    public static int farenheit (int a){
-        return (a * 9/5) +32;
+
+    public static int farenheit(int a) {
+        return (a * 9 / 5) + 32;
     }
 }

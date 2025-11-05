@@ -1,4 +1,4 @@
-package Unidad3.ejercicio2;
+package Unidad2.ejercicio4;
 
 import java.util.Scanner;
 
@@ -10,17 +10,6 @@ public class ejercicio7 {
         int numero = scanner.nextInt();
         String cadena = scanner.next();
         int acumulador1 = scanner.nextInt();
-        repite(numero, cadena, acumulador1);
         scanner.close();
     }
-
-    public static String repite(int numero, String cadena, int acumulador1) {
-        int a = 1;
-        if (acumulador1 <= numero) {
-            return cadena;
-        } else {
-            acumulador1 = acumulador1 + a;
-        }
-    }
-
 }
