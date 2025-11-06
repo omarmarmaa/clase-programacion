@@ -7,9 +7,20 @@ import java.util.Scanner;
 public class ejercicio7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("introduzca el numero de veces que quiere que se repita ");
         int numero = scanner.nextInt();
+        System.out.println("introduzca la palabra");
         String cadena = scanner.next();
-        int acumulador1 = scanner.nextInt();
+
+        System.out.println(repite(numero,cadena));
         scanner.close();
+    }
+    public static String repite(int numero, String cadena) {
+        String resultado=" ";
+        for (int i = 0; i < numero; i++) {
+            resultado=resultado + cadena +" ";
+
+        }
+        return resultado;
     }
 }
