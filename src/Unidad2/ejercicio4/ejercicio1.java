@@ -13,6 +13,7 @@ public class ejercicio1 {
         } else {
             System.out.println("no primo " + a);
         }
+        scanner.close();
     }
 
     public static boolean primo(int a, int b) {
