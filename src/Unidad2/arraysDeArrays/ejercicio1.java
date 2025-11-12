@@ -1,0 +1,19 @@
+package Unidad2.arraysDeArrays;
+
+import java.util.Arrays;
+
+public class ejercicio1 {
+    public static void main(String[] args) {
+
+        String[] datosF = {"Felipe", "Garcia", "Avda. la Palmera 1"};
+        String[] datosL = {"Laura", "Rodriguez", "Calle del chopo 43"};
+        String[] datosA = {"Abraham", "Moreno", "El grande S/N"};
+
+        String[][] alumnos = {datosF, datosL, datosA};
+        // alumnos = new String[3][3];
+        System.out.println("Vamos a imprimir el array de arrays");
+        for (String[] alumno : alumnos) {
+            System.out.println(Arrays.toString(alumno));
+        }
+    }
+}
