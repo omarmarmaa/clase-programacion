@@ -10,6 +10,10 @@ import java.util.Scanner;
 public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
+        String cadena=scanner.nextLine();
+        String[] nueva=cadena.split("\\s+");
+
+        System.out.println(nueva.length);
 
         scanner.close();
     }
