@@ -3,7 +3,7 @@ package Unidad3;
 import java.util.Scanner;
 
 //implementa un método que calcule el maximo de tres números.
-public class Ejercicio5 {
+public class   Ejercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("ingresa el primer valor");
