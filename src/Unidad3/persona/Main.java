@@ -29,7 +29,18 @@ public class Main {
 
         System.out.println(persona1.getNombre() + " es mayor de edad? " + persona1.esMayorDeEdad());
         System.out.println(persona1);
-        Persona persona2= new Persona(nombre,edad,sexo);
+
+
+
+        System.out.println("escribe el nombre");
+        String nombre2= scanner.next();
+        System.out.println("escribe la edad");
+        int edad2= scanner.nextInt();
+        System.out.println("escibe el sexo");
+        char sexo2=scanner.next().charAt(0);
+
+
+        Persona persona2= new Persona(nombre2,edad2,sexo2);
         System.out.println(persona2.getNombre() + " es mayor de edad? " + persona2.esMayorDeEdad());
 
         imc = persona2.calcularIMC();
@@ -42,7 +53,10 @@ public class Main {
         }
 
         System.out.println(persona2);
-        Persona persona3= new Persona(nombre);
+
+        System.out.println("escribe el nombre");
+        String nombre3= scanner.next();
+        Persona persona3= new Persona(nombre3);
         System.out.println(persona3.getNombre() + " es mayor de edad? " + persona3.esMayorDeEdad());
          imc = persona3.calcularIMC();
         if (imc == -1) {

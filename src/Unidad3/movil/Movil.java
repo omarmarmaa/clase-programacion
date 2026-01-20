@@ -6,14 +6,16 @@ public class Movil {
     boolean estaBloqueado;
 
     public Movil() {
-        this("generico",100);
+        this("generico", 100);
     }
 
     public Movil(String marca, int bateria) {
-        this.marca =marca;
-        this.bateria=bateria;
+        this.marca = marca;
+        this.bateria = bateria;
     }
-    public static void llamar(){
+
+    public static void llamar() {
         System.out.println("llamando...");
+
     }
 }

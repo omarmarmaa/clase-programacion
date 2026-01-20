@@ -9,5 +9,6 @@ public class Main {
         System.out.println(" el perimetro " + rectangulo.perimetro());
         rectangulo.rectanguloasteriscos();
 
+
     }
 }

@@ -20,8 +20,7 @@ public class Rectangulo {
      int ancho;
 
     public Rectangulo() {
-        this.largo=12;
-        this.ancho=5;
+        this(12,3);
     }
     //get cojo los valores de las variables
     public int getLargo() {
@@ -54,8 +53,8 @@ public class Rectangulo {
             this.largo = largo;
             this.ancho = ancho;
         } else {
-            this.largo = largo = 12;
-            this.ancho = ancho = 3;
+            this.largo =  12;
+            this.ancho =  3;
         }
     }
 
@@ -64,13 +63,15 @@ public class Rectangulo {
         return largo*ancho;
     }
     public int perimetro(){
-            return 2*largo+ancho;
+            return 2*(largo+ancho);
     }
 
     public  void determinarRectangulo(){
-        if (largo>ancho){
+        if (ancho>largo){
             System.out.println("Es horizontal");
-        }else{
+        } else if (ancho==largo) {
+            System.out.println("Es cuadrado");
+        } else{
             System.out.println("es vertical");
         }
     }
@@ -78,8 +79,8 @@ public class Rectangulo {
         System.out.println(" largo "+largo+" ancho "+ancho);
     }
     public void rectanguloasteriscos(){
-        for (int i=0; i<ancho; i++) {
-            for (int j = 0; j < largo; j++) {
+        for (int i=0; i<largo; i++) {
+            for (int j = 0; j < ancho; j++) {
                 System.out.print("*");
             }
             System.out.println();
