@@ -30,4 +30,12 @@ public class Videojuego {
                 ", uuid=" + uuid +
                 '}';
     }
+
+    public int getStock() {
+        return Stock;
+    }
+
+    public void setStock(int stock) {
+        Stock = stock;
+    }
 }

@@ -29,5 +29,42 @@ public class Main {
             }
         }
     }
+    public static Clientes BuscarCliente(String nombre){
+        for (Clientes actual:clientes){
+            if (actual.nombre.equals(nombre)){
+                return actual;
+            }
+        }
+        return null;
+    }
+    public static Clientes BuscarCliente2(String apellido){
+        for (Clientes actual:clientes){
+            if (actual.apellidos.equals(apellido)){
+                return actual;
+            }
+        }
+        return null;
+    }
 
+    public static Clientes BuscarCliente3(String email){
+        for (Clientes actual:clientes){
+            if (actual.email.equals(email)){
+                return actual;
+            }
+        }
+        return null;
+    }
+
+    public static void RegistrarVent (Venta vent){
+        ventas.add(vent);
+        System.out.println("se ha registrado correctamente");
+       for(Videojuego juego: videojuegos){
+        vent.videojuegos.equals(juego);
+        juego.Stock-=1;
+       }
+    }
+
+    public static void historialVentas(){
+
+    }
 }
